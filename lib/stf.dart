@@ -5,7 +5,7 @@ class FarahWidget extends StatelessWidget {
   String label;
   String value;
 
-  FarahWidget({required this.label, required this.value});
+  FarahWidget({Key? key, required this.label, required this.value}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

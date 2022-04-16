@@ -19,7 +19,7 @@ class FarahWidget extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      width: 360,
+                      width: 340,
                       height: 60,
                       decoration: const BoxDecoration(
                         color: Color(0xffe0e0e0),
@@ -29,20 +29,23 @@ class FarahWidget extends StatelessWidget {
                         children: [
                           Expanded(
                             flex: 2,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 10),
-                              height: 50,
-                              width: 180,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15)),
-                              child: Text(
-                                value,
-                                style: const TextStyle(
-                                  fontSize: 23,
-                                  color: Color(0xff787878),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 5),
+                              child: Container(
+                                height: 50,
+                                width: 180,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(15)),
+                                child: Text(
+                                  value,
+                                  style: const TextStyle(
+                                    fontSize: 23,
+                                    color: Color(0xff787878),
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-                                textAlign: TextAlign.center,
                               ),
                             ),
                           ),
@@ -51,20 +54,23 @@ class FarahWidget extends StatelessWidget {
                           ),
                           Expanded(
                             flex: 1,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 10),
-                              height: 50,
-                              width: 120,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15)),
-                              child: Text(
-                                label,
-                                style: const TextStyle(
-                                  fontSize: 23,
-                                  color: Color(0xff787878),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 5),
+                              child: Container(
+                                height: 50,
+                                width: 120,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(15)),
+                                child: Text(
+                                  label,
+                                  style: const TextStyle(
+                                    fontSize: 23,
+                                    color: Color(0xff787878),
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-                                textAlign: TextAlign.center,
                               ),
                             ),
                           ),
